@@ -1,0 +1,47 @@
+# ───── HarmonyOS 构建产物 ─────
+/build/
+**/build/
+/.hvigor/
+**/.hvigor/
+/.cxx/
+**/.cxx/
+/node_modules/
+**/node_modules/
+/oh_modules/
+**/oh_modules/
+
+# ───── 预编译的 .so 二进制 (体积大,应走 Release 下载) ─────
+entry/libs/arm64-v8a/*
+entry/libs/
+
+# ───── 运行时拷入的资源 (datafiles/scripts/python_home) ─────
+# 这些文件很大,应该由用户自己从 Blender 源码里拷贝
+entry/src/main/resources/rawfile/blender/datafiles/
+entry/src/main/resources/rawfile/blender/scripts/
+entry/src/main/resources/rawfile/python_home/
+
+# ───── DevEco Studio / IDE 缓存 ─────
+.idea/
+*.iml
+local.properties
+.DS_Store
+.gradle/
+
+# ───── 签名和密钥 (绝对不能推!) ─────
+*.p12
+*.cer
+*.csr
+*.p7b
+material/
+signature/
+
+# ───── 构建配置中的本地路径 ─────
+local.properties
+
+# ───── 日志 ─────
+*.log
+
+# ───── HAP/HAR 打包产物 ─────
+*.hap
+*.har
+*.app

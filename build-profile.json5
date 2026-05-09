@@ -1,0 +1,57 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\hp\\.ohos\\config\\default_BlenderOHOS_spXOegDBb-UWbiU_zXPZF5Cavzo_GrNkY6wNZTkVeKs=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001BBED27B7D1CDF98D34FB503FD04EDE27F6E0FBC99DE69BA642BA252371B1F8FF0B9864912732162",
+          "profile": "C:\\Users\\hp\\.ohos\\config\\default_BlenderOHOS_spXOegDBb-UWbiU_zXPZF5Cavzo_GrNkY6wNZTkVeKs=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\hp\\.ohos\\config\\default_BlenderOHOS_spXOegDBb-UWbiU_zXPZF5Cavzo_GrNkY6wNZTkVeKs=.p12",
+          "storePassword": "0000001BCE1B834C5E75BF810D1CA34C1B4E0AD1100A0AD7231DC0227F07BFE3D034C9936BA5A4904E9AC2"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "6.1.1(24)",
+        "compatibleSdkVersion": "6.0.0(20)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "nativeCompiler": "BiSheng",
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
